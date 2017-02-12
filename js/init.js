@@ -22,3 +22,15 @@ $(function() {
     }
   });
 });
+
+  $('.dropdown-button').dropdown({
+      inDuration: 500,
+      outDuration: 500,
+      hover: true, // Activate on hover
+      gutter: 140, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+       

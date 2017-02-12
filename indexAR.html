@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- flag-icon -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ad.svg">
 
 </head>
 <body>
@@ -30,6 +33,14 @@
         <li><a href="#page4">حول</a></li>
         <li><a href="#page5">اتصال</a></li>
       </ul>
+           <!-- Dropdown Trigger -->
+         <a class='dropdown-button btn' href='#' data-activates='dropdown1'>language</a>
+
+     <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+             <li><a href="index.html"><span class="flag-icon flag-icon-gb"></span>ENGLISH</a></li>
+             <li><a href="indexDE.html"><span class="flag-icon flag-icon-de"></span>GERMAN</a></li>
+          </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
