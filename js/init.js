@@ -26,7 +26,7 @@ $(function() {
   $('.dropdown-button').dropdown({
       inDuration: 500,
       outDuration: 500,
-      hover: true, // Activate on hover
+      hover: false, // Activate on hover
       gutter: 93, // Spacing from edge
       belowOrigin: false, // Displays dropdown below the button
       alignment: 'right', // Displays dropdown with edge aligned to the left of button
