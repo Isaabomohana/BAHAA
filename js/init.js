@@ -1,11 +1,9 @@
-(function($){
-  $(function(){
-
-    $('.button-collapse').sideNav();
+$(document).ready(function(){
     $('.parallax').parallax();
+    $('.button-collapse').sideNav();
+});
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+
 
 /*scroll down*/ 
 $(function() {
@@ -33,14 +31,6 @@ $(function() {
       stopPropagation: false // Stops event propagation
     }
   );
-
-  // Show sideNav
-  $('.button-collapse').sideNav('show');
-  // Hide sideNav
-  $('.button-collapse').sideNav('hide');
-  // Destroy sideNav
-  $('.button-collapse').sideNav('destroy');
-
   //scroll to top button
 $(document).ready(function(){
      $(window).scroll(function () {
@@ -62,3 +52,11 @@ $(document).ready(function(){
         $('#back-to-top').tooltip('show');
 
 });
+
+
+  // Show sideNav
+  $('.button-collapse').sideNav('show');
+  // Hide sideNav
+  $('.button-collapse').sideNav('hide');
+  // Destroy sideNav
+  $('.button-collapse').sideNav('destroy');

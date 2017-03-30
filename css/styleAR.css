@@ -17,7 +17,7 @@ nav .brand-logo {
 }
 
 section {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 p {
@@ -34,9 +34,9 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -55,8 +55,8 @@ p {
 }
 @media only screen and (max-width : 747px) {
   .dropdown-button {
-  margin-top: 10px;
-}
+    margin-top: 10px;
+  }
 }
 .dropdown-button {
   margin-top: 10px;
@@ -73,14 +73,14 @@ footer.page-footer {
   margin: 0;
 }
 .back-to-top {
-    background: #2196f3;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display:none;
-    border-style: none;
-    z-index: 200;
+  background: #2196f3;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display:none;
+  border-style: none;
+  z-index: 200;
 }
 
 .TextArabic {
@@ -92,4 +92,26 @@ footer.page-footer {
 .TextHeadArabic {
   font-family: 'Droid Arabic Kufi', serif;
   color: #2196f3;
+}
+
+/*Cards Page3*/
+.page2PopOut {
+  font-family: 'Droid Arabic Kufi', serif;
+  color: #2196f3;
+  font-size: 18px;
+  float: right;
+  margin-top: 10px;
+}
+.card .card-content .card-title{
+  font-family: 'Droid Arabic Kufi', serif;
+  color: #2196f3;
+  font-size: 20px;
+}
+.card .card-reveal .card-title {
+ color: #2196f3; 
+}
+.card .card-reveal {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-family: 'Droid Arabic Kufi', serif;
 }
