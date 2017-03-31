@@ -7,7 +7,7 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-/*scroll down*/ 
+/*scroll down*/
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -15,7 +15,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').stop().animate({
-          scrollTop: target.offset().top 
+          scrollTop: target.offset().top
         }, 1000);
         return false;
       }
@@ -58,7 +58,7 @@ $(document).ready(function(){
             }, 800);
             return false;
         });
-        
+
         $('#back-to-top').tooltip('show');
 
 });
