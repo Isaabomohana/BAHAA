@@ -1,5 +1,20 @@
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
+body {
+  opacity: 1;
+  transition: 1s opacity;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+body.fade-out {
+  opacity: 0;
+  transition: none;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+html {
+  background-color: #ffffff;
+}
 nav {
   position: fixed;
   top: 0;
@@ -172,4 +187,17 @@ footer.page-footer {
 }
 .btn-floating:hover {
   background-color: #085391;
+}
+.wave-ripple {
+  border-radius: 400px;
+}
+
+/* Required */
+
+.hidden{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
 }

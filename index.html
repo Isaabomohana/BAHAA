@@ -9,12 +9,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/styleAR.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="assets/animate.css" />
   <!-- flag-icon -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ad.svg">
 
 </head>
 <body>
+<script>document.body.className += ' fade-out';</script>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -71,7 +73,7 @@
   <div class="container">
     <div class="section">
 
-      <div>
+      <div class="post">
         <h1 class="center TextHeadArabic">السياحة الطبية</h1>
         <p class="TextArabic">
           تتمتع جمهورية ألمانيا الاتحادية بسمعة طيبة جداً في ميدان العلاج والعناية بالمرضى الوافدين من جميع أنحاء العالم. فحتى رؤساء وقادة الدول يقصدون ألمانيا للخضوع للعلاج على أيدي أشهر وأكفأ الأطباء كما يفضل المرضى من عامة الناس التعامل مع الأخصائيين الألمان، نظراً لما يتمتع به هذا البلد من أفضل وأحدث النظم الطبية في العالم<br>
@@ -107,7 +109,7 @@
   <div class="container">
     <div class="section">
 
-      <div>
+      <div class="post">
         <h1 class="center TextHeadArabic">جراحة التجميل</h1>
         <p class="TextArabic">
           بما أن الجمال لا يعتمد على جمال الوجه فقط وإنما جمال الجسم أيضاً وجمال الوجه هو نتيجة نهائية للعديد من العوامل منها صحة ونضارة البشرة وتناسق أجزاءه من الأنف والخدود والجفون وحتى الحاجبين<br>
@@ -161,7 +163,7 @@
   <div class="section">
 
     <div class="row">
-      <div>
+      <div class="post">
         <div class="col m4 center">
           <a href="#!" class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.fadeInImage('#image-test2')">الخدمات <br> اضغط هنا <i class="IconLarge material-icons">settings</i></a>
         </div>    
@@ -299,7 +301,7 @@
 
 <!-- PAGE 5-->
 <footer class="page-footer teal">
-  <div id="page5" class="container">
+  <div id="page5" class="container post">
     <div class="row">
       <div class="col l6 s12">
         <h5 class="white-text">Company Bio</h5>
@@ -341,6 +343,7 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+<script src="assets/viewportchecker.js"></script> 
 
 </body>
 </html>

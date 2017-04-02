@@ -61,3 +61,14 @@ $('.dropdown-button').dropdown({
   $('.button-collapse').sideNav('hide');
   // Destroy sideNav
   $('.button-collapse').sideNav('destroy');
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
+jQuery(document).ready(function() {
+  jQuery('.post').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+      offset: 100    
+     });   
+}); 
