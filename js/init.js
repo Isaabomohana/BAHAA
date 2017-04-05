@@ -1,11 +1,29 @@
-(function($){
-  $(function(){
 
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+$(document).ready(function(){
+  $('.parallax').parallax();
+  $('.button-collapse').sideNav();
+  $('body').removeClass('fade-out');
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  $(window).scroll(function () {
+         if ($(this).scrollTop() > 50) {
+             $('#back-to-top').fadeIn();
+         } else {
+             $('#back-to-top').fadeOut();
+         }
+     });
+     // scroll body to 0px on click
+     $('#back-to-top').click(function () {
+         $('#back-to-top').tooltip('hide');
+         $('body,html').animate({
+             scrollTop: 0
+         }, 800);
+         return false;
+     });
+
+     $('#back-to-top').tooltip('show');
+});
+
+
 
 /*scroll down*/
 $(function() {
@@ -23,16 +41,38 @@ $(function() {
   });
 });
 
-  $('.dropdown-button').dropdown({
-      inDuration: 500,
-      outDuration: 500,
+$('.dropdown-button').dropdown({
+  inDuration: 500,
+  outDuration: 500,
       hover: false, // Activate on hover
       gutter: 93, // Spacing from edge
       belowOrigin: false, // Displays dropdown below the button
       alignment: 'right', // Displays dropdown with edge aligned to the left of button
       stopPropagation: false // Stops event propagation
     }
-  );
+    );
+  //scroll to top button
+  $(document).ready(function(){
+   $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+          $('#back-to-top').tooltip('hide');
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+
+        $('#back-to-top').tooltip('show');
+
+      });
+
 
   // Show sideNav
   $('.button-collapse').sideNav('show');
@@ -41,24 +81,9 @@ $(function() {
   // Destroy sideNav
   $('.button-collapse').sideNav('destroy');
 
-  //scroll to top button
-$(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-
-        $('#back-to-top').tooltip('show');
-
+jQuery(document).ready(function() {
+  jQuery('.post').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+      offset: 100
+     });
 });
