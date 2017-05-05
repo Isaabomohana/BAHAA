@@ -17,6 +17,7 @@ html {
 }
 nav {
   position: fixed;
+  /*opacity: 0.3;*/
   top: 0;
   z-index: 200;
   background-color: rgba(255,255,255,.9);
@@ -30,6 +31,7 @@ nav a {
 nav ul a,
 nav .brand-logo {
   color: #444;
+  width: auto;
 }
 
 section {
@@ -131,7 +133,7 @@ footer.page-footer {
   font-size: 20px;
 }
 .card .card-reveal .card-title {
- color: #2196f3; 
+ color: #2196f3;
 }
 .card .card-reveal {
   background-color: rgba(255, 255, 255, 0.9);
