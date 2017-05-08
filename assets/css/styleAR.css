@@ -120,13 +120,15 @@ footer.page-footer {
 }
 
 /*Cards Page3*/
-/*.page2PopOut {
+.page2PopOut {
   font-family: 'Droid Arabic Kufi', serif;
   color: #2196f3;
   font-size: 18px;
   float: right;
   margin-top: 10px;
-}*/
+}
+
+
 /*.card .card-content .card-title{
   font-family: 'Droid Arabic Kufi', serif;
   color: #2196f3;
@@ -170,14 +172,19 @@ footer.page-footer {
   border-radius: 200px;
 }
 
-/*.card {
+.card {
+  min-height: 300px;
+}
+
+/* .card-image {
   border-radius: 500px;
-}*/
-/*.card .card-image img {
+}
+ .card .card-image img {
+  border-radius: 400px;
+}
+.card .card-reveal {
   border-radius: 400px;
 }*/
-
-
 .btn-floating.btn-large i {
   font-size: 280px;
   color : rgba(255, 255, 255, 0.5);
