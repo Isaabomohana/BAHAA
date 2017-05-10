@@ -91,13 +91,13 @@
       // Destroy sideNav
       $('.button-collapse').sideNav('destroy');
 
+
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
     jQuery(document).ready(function() {
       jQuery('.post').addClass("hidden").viewportChecker({
           classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
           offset: 100
          });
     });
-
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
