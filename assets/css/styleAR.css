@@ -174,7 +174,10 @@ footer.page-footer {
   border-radius: 500px;
 }
 .card .card-image img {
-  border-radius: 400px;
+  margin-left: 100px;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
 }
 .card .card-reveal {
   border-radius: 400px;
