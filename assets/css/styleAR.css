@@ -211,3 +211,10 @@ animation-delay: .75s;
 .delay-4 {
 animation-delay: 1s;
 }
+img.l-img {
+    min-width: 80px!important;
+    min-height: 90px!important;
+}
+.z-depth-4 {
+  min-height: 280px!important;
+}

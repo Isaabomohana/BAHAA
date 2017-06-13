@@ -5,6 +5,8 @@
     $('.parallax').parallax();
     $('.button-collapse').sideNav();
     $('body').removeClass('fade-out');
+    
+
 
     $(window).scroll(function () {
            if ($(this).scrollTop() > 50) {
