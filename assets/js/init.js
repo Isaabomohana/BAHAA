@@ -5,16 +5,17 @@
     $('.parallax').parallax();
     $('.button-collapse').sideNav();
     $('body').removeClass('fade-out');
-    
+
 
 
     $(window).scroll(function () {
-           if ($(this).scrollTop() > 50) {
-               $('#back-to-top').fadeIn();
-           } else {
-               $('#back-to-top').fadeOut();
-           }
-       });
+       if ($(this).scrollTop() > 50) {
+           $('#back-to-top').fadeIn();
+       } else {
+           $('#back-to-top').fadeOut();
+       }
+     });
+
        // scroll body to 0px on click
        $('#back-to-top').click(function () {
            $('#back-to-top').tooltip('hide');
@@ -23,25 +24,6 @@
            }, 800);
            return false;
        });
-
-
-       $(window).scroll(function () {
-              if ($(this).scrollTop() > 50) {
-                  $('#back-to-top').fadeIn();
-              } else {
-                  $('#back-to-top').fadeOut();
-              }
-          });
-          // scroll body to 0px on click
-          $('#back-to-top').click(function () {
-              $('#back-to-top').tooltip('hide');
-              $('body,html').animate({
-                  scrollTop: 0
-              }, 800);
-              return false;
-          });
-
-          $('#back-to-top').tooltip('show');
      });
 
      $('a[href*="#"]:not([href="#"])').click(function() {
@@ -67,14 +49,6 @@
            stopPropagation: false // Stops event propagation
          });
 
-         $(window).scroll(function () {
-          if ($(this).scrollTop() > 50) {
-            $('#back-to-top').fadeIn();
-          } else {
-            $('#back-to-top').fadeOut();
-          }
-        });
-
         // scroll body to 0px on click
         $('#back-to-top').click(function () {
           $('#back-to-top').tooltip('hide');
@@ -85,15 +59,12 @@
         });
 
       $('#back-to-top').tooltip('show');
-
       // Show sideNav
       $('.button-collapse').sideNav('show');
       // Hide sideNav
       $('.button-collapse').sideNav('hide');
       // Destroy sideNav
       $('.button-collapse').sideNav('destroy');
-
-
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
