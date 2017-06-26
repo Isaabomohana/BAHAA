@@ -5,6 +5,7 @@ body {
   transition: 1s opacity;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
+  padding-top: 10px;
 }
 body.fade-out {
   opacity: 0;
@@ -63,6 +64,9 @@ p {
   }
   #index-banner .section {
     top: 10%;
+  }
+  .slides li img {
+
   }
 }
 
@@ -217,4 +221,15 @@ img.l-img {
 }
 .z-depth-4 {
   min-height: 280px!important;
+}
+
+li.indicator-item.active {
+  background-color: #2196f3!important;
+}
+
+.logo {
+  max-height: 265px!important;
+  max-width: 220px;
+  background-color: white;
+  margin-top: 50px;
 }

@@ -5,7 +5,7 @@
     $('.parallax').parallax();
     $('.button-collapse').sideNav();
     $('body').removeClass('fade-out');
-
+    $('.slider').slider();
 
 
     $(window).scroll(function () {
