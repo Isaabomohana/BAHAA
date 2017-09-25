@@ -233,3 +233,8 @@ li.indicator-item.active {
   background-color: white;
   margin-top: 50px;
 }
+
+.social-icon {
+  background-color: #2196F3;
+  color: #fff;
+}
