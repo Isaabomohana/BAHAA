@@ -3,10 +3,9 @@
 
     $('.carousel').carousel();
     $('.parallax').parallax();
-    $('.button-collapse').sideNav();
+
     $('body').removeClass('fade-out');
     $('.slider').slider();
-
 
     $(window).scroll(function () {
        if ($(this).scrollTop() > 50) {
@@ -57,25 +56,21 @@
           }, 800);
           return false;
         });
-
-      $('#back-to-top').tooltip('show');
-      // Show sideNav
-      $('.button-collapse').sideNav('show');
-      // Hide sideNav
-      $('.button-collapse').sideNav('hide');
-      // Destroy sideNav
-      $('.button-collapse').sideNav('destroy');
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-   jQuery(document).ready(function() {
-      jQuery('.post2').addClass("hidden").viewportChecker({
-          classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
-          offset: 100
-         });
-     jQuery('.post').addClass("hidden").viewportChecker({
-         classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-         offset: 100
-        });
+jQuery(document).ready(function() {
+  jQuery('.post2').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+      offset: 100
+     });
+ jQuery('.post').addClass("hidden").viewportChecker({
+     classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+     offset: 100
     });
+});
+$( document ).ready(function(){
+  $(".button-collapse").sideNav({
+    closeOnClick: true
+  });
+})
