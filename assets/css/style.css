@@ -75,3 +75,9 @@ footer.page-footer {
   border-style: none;
   z-index: 200;
 }
+.text-de {
+  font-size: 20px;
+}
+.pad-b {
+  padding-bottom: 10px;
+}

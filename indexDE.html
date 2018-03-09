@@ -3,254 +3,319 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>BAHAA's Project</title>
+  <title>Al-Hijaz</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./assets/css/styleAR.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <!-- flag-icon -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ad.svg">
+  <link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
 
+  <script src="https://use.fontawesome.com/21a9a2bf79.js"></script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107150332-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107150332-1');
+  </script>
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <nav class="blue white-text" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#home" class="brand-logo">Logo</a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <span class="green-text text-accent-3">Al-</span>Hijaz</a>
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-button btn right blue' href='#' data-activates='dropdown1'>LAN</a>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="index.html"><span class="flag-icon flag-icon-ae"></span>ARABIC</a></li>
+        <li><a href="indexDE.html"><span class="flag-icon flag-icon-gb"></span>GERMAN</a></li>
+      </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#page1">Medizin in Deutschland</a></li>
-        <li><a href="#page2">Tourismus</a></li>
-        <li><a href="#page3">Dienstleistungen</a></li>
-        <li><a href="#page4">über</a></li>
+        <li><a href="#page1">Medizintourismus</a></li>
+        <li><a href="#page2">Dienstleistungen</a></li>
         <li><a href="#page5">Kontakt</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#page1">Medizin in Deutschland</a></li>
-        <li><a href="#page2">Tourismus</a></li>
-        <li><a href="#page3">Dienstleistungen</a></li>
-        <li><a href="#page4">über</a></li>
+        <li><a href="#page1">Medizintourismus</a></li>
+        <li><a href="#page2">Dienstleistungen</a></li>
         <li><a href="#page5">Kontakt</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
-     <!-- Dropdown Trigger -->
-         <a class='dropdown-button btn right' href='#' data-activates='dropdown1'>LAN</a>
-
-     <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content'>
-             <li><a href="index.html"><span class="flag-icon flag-icon-ae"></span>ARABIC</a></li>
-             <li><a href="index.html"><span class="flag-icon flag-icon-gb"></span>ENGLISH</a></li>
-          </ul>
-
     </div>
   </nav>
   <!-- HOME -->
-<section id="home">
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">BAHAA's Project</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A Medical-Tourisim WebSite</h5>
-        </div>
-        <div class="row center">
-          <a href="#page1" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
+  <section id="home">
+    <div class="slider">
+      <ul class="slides">
+        <li class="white center">
+          <img class="logo" src="assets/images/logo.png"> <!-- random image -->
+        </li>
+        <li>
+          <img src="assets/images/sld1.jpg"> <!-- random image -->
+          <div class="caption right-align">
+            <h3 class="blue-text"></h3>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/sld2.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h3 class="blue-text"></h3>
+            <h5 class="light blue-text"></h5>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/sld3.jpg"> <!-- random image -->
+          <div class="caption right-align">
+            <h3 class="blue-text"></h3>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="parallax"><img src="./assets/images/smart-medical.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-  <!-- END HOME -->
-</section>
+   <!-- END HOME -->
+  </section>
 
   <!-- PAGE 1-->
-<section id="page1">
+  <section id="page1">
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
+      <div class="post">
+        <h1 class="center TextHeadArabic">Medizintourismus</h1>
+        <p class="text-de">
+          Deutschland hat auf der ganzen Welt einen sehr guten Ruf in vielen Bereichen. Auch in der Medizin, angefangen bei der Prophylaxe über die Beratung und Behandlung bis hin zur Rehabilitation bieten wir im Vergleich mit den internationalen Standards eine ausgezeichnete Qualität.
+Dieses hohe Niveau hat Deutschland durch Kooperationen zwischen der medizinischen Praxis, der wissenschaftlichen Forschung sowie der medizinischen und pharmazeutischen Industrie in allen Regionen des Landes erreicht. Dies ist der Grund, warum jedes Jahr Zehntausende ausländischer Patienten deutsche Krankenhäuser und Kliniken aufsuchen, um sich von hervorragend ausgebildeten und qualifizierten Ärzten nach den modernsten Methoden behandeln zu lassen.
+Neben medizinisch notwendigen Therapien kann die ästhetische und plastische Chirurgie bei einem verantwortungsvollen Umgang einen Beitrag zum Wohlbefinden leisten.
+Schließlich ist Deutschland auch der richtige Ort, um die wohltuende Wirkung natürlicher Quellen und Bäder zu genießen. In über 100 Luftkurorten und Seebädern werden zahlreiche Gesundheits- und Entspannungsprogramme angeboten.
+        </p>
       </div>
     </div>
-    <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
   </div>
-  <!-- END PAGE 1-->
-</section>
-
- <!-- PAGE 2-->
-<section id="page2">
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">PAGE2</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">PAGE2</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-  <!-- END PAGE 2-->
-</section>
-
-<!-- PAGE 3-->
-<section id="page3">
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">PAGE3</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
+   <!-- END PAGE 1-->
+  </section>
+  <!-- PAGE 2-->
+   <section id="page2">
     <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">PAGE3</h5>
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h1 class="header col s12 light">Dienstleistungen</h1>
+          </div>
         </div>
       </div>
+      <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
     </div>
-    <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-  <!--END PAGE 3-->
-</section>
-
-  <!-- PAGE 4-->
-<section id="page4">
-  <div class="container">
     <div class="section">
-
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">PAGE4</p>
+          <div class="">
+            <div class="col l3 m4 s12 post delay-1">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/information-variant.png">
+                </div>
+                <div class="card-content center">
+                  <span class="card-title activator">Beratung</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Beratung<i class="material-icons right">close</i></span>
+                  <p>
+                    Nach dem Erhalt und gegebenenfalls der Übersetzung der Unterlagen nehmen wir Kontakt zu den passenden Ärzten und Krankenhäusern auf, um unseren Kunden die besten Optionen aufzuzeigen.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post delay-3">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/book-open.png">
+                </div>
+                <div class="card-content center">
+                  <span class="card-title activator">Kosten</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Kosten<i class="material-icons right">close</i></span>
+                  <p>
+                    Um den behandelnden Ärzten und Kliniken Sicherheit zu bieten, klären wir die Details im Vorfeld – sei es die Übernahme der Kosten für medizinisch notwendige Behandlungen ihrer Bürger durch die arabischen Staaten oder Selbstzahler.                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post delay-2">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/account-card-details.png">
+                </div>
+                <div class="card-content center">
+                  <span class="card-title activator">Visum</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Visum<i class="material-icons right">close</i></span>
+                  <p>
+                    Nach der Entscheidung für eine Klinik und Absprache möglicher Termine kontaktieren wir die zuständigen Behörden und Botschaften, um die Visa zu beantragen und bei Bedarf zu verlängern.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post delay-4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/airplane.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Flüge</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Flüge<i class="material-icons right">close</i></span>
+                  <p>
+                    Wir kümmern uns um die Buchung der Flüge – notfalls auch per MedEvac.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-1">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/translate.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Unterkunft</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Unterkunft<i class="material-icons right">close</i></span>
+                  <p>
+                    In Absprache mit den Patienten organisieren wir die Unterbringung von Begleitpersonen in Hotels oder Apartments.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-2">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/car.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Transport</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Transport<i class="material-icons right">close</i></span>
+                  <p>
+                    Wir organisieren alle nötigen und gewünschten Transporte – soweit medizinisch notwendig auch mit speziell ausgestatteten Fahrzeugen.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-3">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/bus.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Tourismus</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Tourismus<i class="material-icons right">close</i></span>
+                  <p>
+                    Im Anschluss an die Behandlung können die Patienten zahlreiche touristische Ziele in Deutschland und den Nachbarländern kennen lernen und mit einer Städtereise, einer Kur oder einem Wellnessurlaub in der Natur die vollständige Genesung unterstützen.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/ambulance.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Betreuungs- und Übersetzungsdienste</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Betreuungs- und Übersetzungsdienste<i class="material-icons right">close</i></span>
+                  <p>
+                    Unser Team umfasst qualifizierte Dolmetscher, die die Patienten zum Arzt und ins Krankenhaus begleiten und Ihnen rund um den Aufenthalt zur Seite stehen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
+    </div>
+  </section>
+  <footer class="page-footer blue">
+   <div id="page5" class="post">
+     <div class="row">
+       <div class="col l2 s12">
+        <h5 class="white-text TextHeadArabic">Kontakt:</h5>
+        <ul class="center">
+          <li><a class="white-text" href="#!">+49 (30) 46066190</a></li><br>
+          <li><a class="white-text" href="#!">+49 (152) 02032765</a></li><br>
+          <li><a class="white-text" href="mailto:saadaldin@al-hijaz.de">saadaldin@al-hijaz.de</a></li><br>
+          <li>
+            <a href="https://www.youtube.com/channel/UCZu_kK5Dwsvv0yKmsSkDVrQ"
+              target="_blank">
+              <i class="fa fa-youtube fa-2x social-icon" aria-hidden="true"></i>
+            </a>
+          </li><br>
+          <li>
+            <a href="https://www.facebook.com/Al-hijaz-for-Medical-Tourism-1524219290953660/"
+              target="_blank">
+              <i class="fa fa-facebook-square fa-2x social-icon" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col l5 s12">
+        <h5 class="white-text TextHeadArabic">Über uns:</h5>
+        <p class="grey-text text-lighten-4">
+          Al-Hijaz ist ein junges Unternehmen für medizinische Dienstleistungen und medizinischen Tourismus. Wir bestreben ein großes Netzwerk mit den besten Krankenhäusern und Kliniken aufzubauen, um den arabischen Patienten die besten medizinischen Dienstleistungen anzubieten.
+        </p>
+      </div>
+      <div class="col l5 s12">
+        <h5 class="white-text TextHeadArabic">Impressum:</h5>
+        <p class="white-text text-lighten-4">
+          <strong><b>Angaben gemäß § 5 TMG:</b></strong><br>
+          Bahaa Saad Al Din <br>
+          Medizinischer Tourismus <br>
+          Heidelberger Straße 35 <br>
+          12059 Berlin
+        </p>
+        <ul class="collapsible white-text" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header blue">Weiter ...</div>
+            <div class="collapsible-body">
+              <b>Streitschlichtung</b><br>
+              Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer <br>
+              Verbraucherschlichtungsstelle teilzunehmen. <br><br>
+              <b>Haftung für Inhalte</b><br>
+              Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">PAGE4</h5>
-        </div>
-      </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Made by <span><a class="brown-text text-lighten-3" href="https://isaabomohana.github.io/" target="_blank">MrIsa</span></a>  &
+      <span>
+        <a class="brown-text text-lighten-3" href="http://www.wissamghozlan.de"
+          target="_blank">Wissam</a>
+      </span>
     </div>
-    <div class="parallax"><img src="./assets/images/family-medical.png" alt="Unsplashed background img 3"></div>
   </div>
-  <!-- END PAGE 4-->
-</section>
-
-<!-- PAGE 5-->
-  <footer class="page-footer teal">
-    <div id="page5" class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">MrIsa & Wissam</a>
-      </div>
-    </div>
-    <a id="back-to-top" href="#home" class="btn btn-default back-to-top" role="button" data-toggle="tooltip" data-placement="left"><i class="material-icons">navigation</i></a>
-    <!--END PAGE 5-->
+  <a id="back-to-top" href="#home" class="btn btn-default back-to-top" role="button" data-toggle="tooltip" data-placement="left"><i class="material-icons">navigation</i></a>
+   <!--END PAGE 5-->
   </footer>
 
-
   <!--  Scripts  -->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="./assets/js/materialize.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+  <script src="./assets/js/viewportchecker.js"></script>
   <script src="./assets/js/init.js"></script>
-
-  </body>
+</body>
 </html>

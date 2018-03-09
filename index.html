@@ -29,9 +29,16 @@
 <script>document.body.className += ' fade-out';</script>
   <nav class="blue" role="navigation">
     <div class="nav-wrapper container">
-      <!-- <img src="images/Hijaz_F.png" class="brand-logo" id="logo-container" alt=""> -->
       <a id="logo-container" href="#" class="brand-logo indigo-text text-darken-3">
         <span class="green-text text-accent-3">Al-</span>Hijaz</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <!-- Dropdown Trigger -->
+        <a class='dropdown-button btn right' href='#' data-activates='dropdown1'>LAN</a>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="index.html"><span class="flag-icon flag-icon-ae"></span>ARABIC</a></li>
+          <li><a href="indexDE.html"><span class="flag-icon flag-icon-gb"></span>GERMAN</a></li>
+        </ul>
       <ul class="right hide-on-med-and-down">
         <li><a href="#page5">اتصال</a></li>
         <li><a href="#page3">الخدمات</a></li>
@@ -39,7 +46,6 @@
         <li><a href="#page2">جراحة التجميل</a></li>
         <li><a href="#page1">السياحة الطبية</a></li>
       </ul>
-
        <!-- <ul id="nav-mobile" class="side-nav">
         <li><a href="#page1">السياحة الطبية</a></li>
         <li><a href="#page2">جراحة التجميل</a></li>
