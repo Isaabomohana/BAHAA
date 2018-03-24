@@ -7,8 +7,11 @@ nav {
 nav ul a,
 nav .brand-logo {
   color: #444;
+  width: auto;
 }
-
+.right li a {
+  font-size: 18px;
+}
 section {
   padding-top: 40px;
 }
@@ -80,4 +83,11 @@ footer.page-footer {
 }
 .pad-b {
   padding-bottom: 10px;
+}
+.grey-text {
+  text-align: left;
+}
+
+.impressum-marg {
+  margin-top: 40px;
 }

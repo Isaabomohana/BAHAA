@@ -43,6 +43,15 @@ p {
   line-height: 2rem;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 .button-collapse {
   color: #26a69a;
 }
@@ -121,6 +130,7 @@ footer.page-footer {
 .TextHeadArabic {
   font-family: 'Droid Arabic Kufi', serif;
   color: #2196f3;
+  text-align: center;
 }
 
 /*Cards Page3*/
@@ -138,6 +148,7 @@ footer.page-footer {
   font-family: 'Droid Arabic Kufi', serif;
   color: #2196f3;
   font-size: 20px;
+  padding: 20px;
 }
 .card .card-reveal .card-title {
  color: #2196f3;
@@ -146,6 +157,7 @@ footer.page-footer {
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 13px;
   font-family: 'Droid Arabic Kufi', serif;
+  padding: 60px;
 }
 .card-images:hover {
  background: rgba(251, 3, 71, 0.7);
@@ -180,10 +192,7 @@ footer.page-footer {
   border-radius: 500px;
 }
 .card .card-image img {
-  margin-left: 100px;
-  height: 100px;
-  width: 100px;
-  padding: 10px;
+  padding: 60px;
 }
 .card .card-reveal {
   border-radius: 400px;
@@ -237,4 +246,7 @@ li.indicator-item.active {
 .social-icon {
   background-color: #2196F3;
   color: #fff;
+}
+.grey-text {
+  text-align: right;
 }

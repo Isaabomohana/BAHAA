@@ -3,252 +3,291 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>BAHAA's Project</title>
+  <title>Al-Hijaz</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./assets/css/styleAR.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <!-- flag-icon -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ad.svg">
+  <link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
 
+  <script src="https://use.fontawesome.com/21a9a2bf79.js"></script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107150332-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107150332-1');
+  </script>
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <nav class="blue white-text" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo indigo-text text-darken-3">
+        <span class="green-text text-accent-3">Al-</span>Hijaz</a>
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-button btn right blue' href='#' data-activates='dropdown1'><span class="flag-icon flag-icon-gb"></a>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="index.html"><span class="flag-icon flag-icon-ae"></span>ARABIC</a></li>
+        <li><a href="indexDE.html"><span class="flag-icon flag-icon-de"></span>GERMAN</a></li>
+        <li><a href="indexEN.html"><span class="flag-icon flag-icon-gb"></span>ENGLISH</a></li>
+      </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#page1">Medicine in Germany</a></li>
-        <li><a href="#page2">tourism</a></li>
-        <li><a href="#page3">Services</a></li>
-        <li><a href="#page4">About</a></li>
-        <li><a href="#page5">Contact</a></li>
+        <li><a href="#page1">Medical tourism</a></li>
+        <li><a href="#page2">Services</a></li>
+        <li><a href="#page5">Kontakt</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#page1">Medicine in Germany</a></li>
-        <li><a href="#page2">tourism</a></li>
-        <li><a href="#page3">Services</a></li>
-        <li><a href="#page4">About</a></li>
-        <li><a href="#page5">Contact</a></li>
+        <li><a href="#page1">Medical tourism:</a></li>
+        <li><a href="#page2">Services</a></li>
+        <li><a href="#page5">Kontakt</a></li>
       </ul>
-           <!-- Dropdown Trigger -->
-         <a class='dropdown-button btn right' href='#' data-activates='dropdown1'>LAN</a>
-
-     <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content'>
-             <li><a href="index.html"><span class="flag-icon flag-icon-ae"></span>ARABIC</a></li>
-             <li><a href="indexDE.html"><span class="flag-icon flag-icon-de"></span>GERMAN</a></li>
-          </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <!-- HOME -->
-<section id="home">
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">BAHAA's Project</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A Medical-Tourisim WebSite</h5>
-        </div>
-        <div class="row center">
-          <a href="#page1" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
+  <section id="home">
+    <div class="slider">
+      <ul class="slides">
+        <li class="white center">
+          <img class="logo" src="assets/images/logo.png"> <!-- random image -->
+        </li>
+        <li>
+          <img src="assets/images/sld1.jpg"> <!-- random image -->
+          <div class="caption right-align">
+            <h3 class="blue-text"></h3>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/sld2.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h3 class="blue-text"></h3>
+            <h5 class="light blue-text"></h5>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/sld3.jpg"> <!-- random image -->
+          <div class="caption right-align">
+            <h3 class="blue-text"></h3>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="parallax"><img src="./assets/images/smart-medical.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-  <!-- END HOME -->
-</section>
+   <!-- END HOME -->
+  </section>
 
   <!-- PAGE 1-->
-<section id="page1">
+  <section id="page1">
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
+      <div class="post">
+        <h1 class="center TextHeadArabic">Medical tourism</h1>
+        <p class="text-de blue-text">
+          All over the world, Germany has an outstanding reputation in many fields. In the medical field in particular, it offers an excellent quality compared to international standards, from preventive healthcare to advice, treatment, and rehabilitation. Germany has reached this high level through close cooperation between medical practitioners, researchers, and medical and pharmaceutical industry professionals throughout the country. This is why every year tens of thousands of foreign patients visit German hospitals and clinics to be treated by highly trained and qualified doctors who use only the most modern methods. In addition to offering many medically necessary therapies, Germany is a popular destination for aesthetic procedures, which, when employed responsibly, can contribute to a heightened sense of well-being. This shouldn’t come as a surprise. After all, Germany is famous for its natural springs and baths, which are famously soothing. Over 100 health and seaside resorts offer myriad health and relaxation programs.
+        </p>
       </div>
     </div>
-    <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
   </div>
-  <!-- END PAGE 1-->
-</section>
-
- <!-- PAGE 2-->
-<section id="page2">
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">PAGE2</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">PAGE2</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-  <!-- END PAGE 2-->
-</section>
-
-<!-- PAGE 3-->
-<section id="page3">
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">PAGE3</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
+   <!-- END PAGE 1-->
+  </section>
+  <!-- PAGE 2-->
+   <section id="page2">
     <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">PAGE3</h5>
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h1 class="header col s12 light">Services</h1>
+          </div>
         </div>
       </div>
+      <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
     </div>
-    <div class="parallax"><img src="./assets/images/hospitals.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-  <!--END PAGE 3-->
-</section>
-
-  <!-- PAGE 4-->
-<section id="page4">
-  <div class="container">
     <div class="section">
-
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">PAGE4</p>
+          <div class="">
+            <div class="col l3 m4 s12 post delay-1">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/information-variant.png">
+                </div>
+                <div class="card-content center">
+                  <span class="card-title activator">Consultation</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Consultation<i class="material-icons right">close</i></span>
+                  <p>
+                    After receiving and, if necessary, translating the diagnosis and other documents, we will contact the appropriate doctors and hospitals and offer our patients only the best options.                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post delay-3">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/dollar.png">
+                </div>
+                <div class="card-content center">
+                  <span class="card-title activator">Costs</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Costs<i class="material-icons right">close</i></span>
+                  <p>
+                    To provide security for the attending physicians and clinics as well as for the patients, we clarify the details in advance, specifying who will cover the costs of the medical procedures - the states in question or the patients themselves.
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post delay-2">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/account-card-details.png">
+                </div>
+                <div class="card-content center">
+                  <span class="card-title activator">Visa</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Visa<i class="material-icons right">close</i></span>
+                  <p>
+                    After deciding on a clinic and arranging possible appointments in coordination with the hospital, we will contact the relevant authorities and embassies, apply for the visa, and, if necessary, request an extension.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post delay-4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/airplane.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Flights</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Flights<i class="material-icons right">close</i></span>
+                  <p>
+                    In cooperation with travel agencies, we book all flights - if necessary also via MedEvac.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-1">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/bed.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Accommodations</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Accommodations<i class="material-icons right">close</i></span>
+                  <p>
+                    In the patient agreement, we organize accommodation for accompanying persons in hotels or apartments.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/translate.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Support and translation services</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Support and translation services<i class="material-icons right">close</i></span>
+                  <p>
+                    Our team consists of highly qualified interpreters, who accompany the patients to the doctor and the hospital and assist them during their stay. We offer interpreters for Arabic, German, English, Spanish, and French.                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-2">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/car.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Transport</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Transport<i class="material-icons right">close</i></span>
+                  <p>
+                    We organize all necessary and desired transportation services - including transportation in specially equipped medical vehicles, in the case that this is deemed necessary.                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m4 s12 post2 delay-3">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-teal waves-blue">
+                  <img class="activator" src="./assets/images/city.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator center">Tourism</span>
+                </div>
+                <div class="card-reveal center">
+                  <span class="card-title">Tourism<i class="material-icons right">close</i></span>
+                  <p>
+                    After their treatment, patients have the option of visiting numerous tourist destinations in Germany and neighboring countries, where they can spend a relaxing holiday in a city, a spa, or the countryside, which can help to facilitate a more complete recovery.                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
+    </div>
+  </section>
+  <footer class="page-footer blue">
+   <div id="page5" class="post">
+     <div class="row">
+       <div class="col l4 s12">
+        <h5 class="white-text TextHeadArabic">Contact:</h5>
+        <ul class="center">
+          <li><a class="white-text" href="#!">+49 (30) 46066190</a></li><br>
+          <li><a class="white-text" href="#!">+49 (152) 02032765</a></li><br>
+          <li><a class="white-text" href="mailto:saadaldin@al-hijaz.de">saadaldin@al-hijaz.de</a></li><br>
+          <li>
+            <a href="https://www.youtube.com/channel/UCZu_kK5Dwsvv0yKmsSkDVrQ"
+              target="_blank">
+              <i class="fa fa-youtube fa-2x social-icon" aria-hidden="true"></i>
+            </a>
+          </li><br>
+          <li>
+            <a href="https://www.facebook.com/Al-hijaz-for-Medical-Tourism-1524219290953660/"
+              target="_blank">
+              <i class="fa fa-facebook-square fa-2x social-icon" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col l8 s12">
+        <h5 class="white-text TextHeadArabic">About us:</h5>
+        <p class="grey-text text-lighten-4">
+          Al-Hijaz is a young company for medical services and medical tourism. We aim to build an extensive network of only the best hospitals and clinics, as well as travel agencies in the countries of origin and Germany, to offer the best medical services to Arab patients.        </p>
+        <a href="impressum.html"><h5 class="white-text TextHeadArabic">Impressum</h5></a>
+      </div>
     </div>
   </div>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">PAGE4</h5>
-        </div>
-      </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Made by <span><a class="brown-text text-lighten-3" href="https://isaabomohana.github.io/" target="_blank">MrIsa</span></a>  &
+      <span>
+        <a class="brown-text text-lighten-3" href="http://www.wissamghozlan.de"
+          target="_blank">Wissam</a>
+      </span>
     </div>
-    <div class="parallax"><img src="./assets/images/family-medical.png" alt="Unsplashed background img 3"></div>
   </div>
-  <!-- END PAGE 4-->
-</section>
-
-<!-- PAGE 5-->
-  <footer class="page-footer teal">
-    <div id="page5" class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">MrIsa & Wissam</a>
-      </div>
-    </div>
-    <a id="back-to-top" href="#home" class="btn btn-default back-to-top" role="button" data-toggle="tooltip" data-placement="left"><i class="material-icons">navigation</i></a>
-    <!--END PAGE 5-->
+  <a id="back-to-top" href="#home" class="btn btn-default back-to-top" role="button" data-toggle="tooltip" data-placement="left"><i class="material-icons">navigation</i></a>
+   <!--END PAGE 5-->
   </footer>
 
-
   <!--  Scripts  -->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="./assets/js/materialize.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+  <script src="./assets/js/viewportchecker.js"></script>
   <script src="./assets/js/init.js"></script>
-
-  </body>
+</body>
 </html>
